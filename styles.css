@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Poppins:wght@400;500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Courier Prime", monospace;
+  /* font-family: "Acme", sans-serif; */
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 2;
+}
+
+.section-login {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  color: #fff;
+  padding: 3rem;
+}
+
+.header > h4 {
+  font-family: "Acme", sans-serif;
+  font-size: 1.6rem;
+  /* text-shadow: 3px -2px 2px #000000; */
+  letter-spacing: 3;
+  font-family: "Courier Prime", monospace;
+}
+
+.header > span {
+  font-size: 1.5rem;
+}
+
+.login-left {
+  padding-top: 400px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width: 40%;
+  padding-right: 50px;
+  padding-left: 50px;
+  color: #fff;
+}
+
+.login-left > button {
+  background: #2e0178;
+  color: #fff;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  padding: 0.4rem 1.6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+}
+
+.login-left > button:hover {
+  background: transparent;
+  border: 2px solid #fff;
+  letter-spacing: 2;
+}
+
+.login-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  width: 40%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background: rgba(10, 10, 10, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.login-right > p {
+  padding-top: 1rem;
+}
+
+.login-right > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.login-input {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin: 0.5rem 0rem;
+  width: 100%;
+}
+
+.login-input > input {
+  background: transparent;
+  color: #fff;
+  padding: 0 1.5rem;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.login-input > input::placeholder {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.login-input > input:focus {
+  border-bottom: 2px solid #0b283e;
+}
+
+.login-input > label {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 7;
+  color: #fff;
+}
+
+.login-checkbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.login-checkbox > label {
+  font-size: 0.8rem;
+  padding-left: 5px;
+  color: #fff;
+}
+
+.login-button {
+  background: transparent;
+  border-radius: 20px;
+  width: 40%;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.login-button:hover {
+  background: #2e0178;
+  border: 2px solid #fff;
+  letter-spacing: 2;
+}
+
+.login-mobile {
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.login-mobile > a {
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+  }
+
+  .login-mobile {
+    display: block;
+  }
+}
